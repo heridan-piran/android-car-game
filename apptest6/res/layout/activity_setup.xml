@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/road4lane"
+    tools:context=".SetupActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:text="Name:"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        android:ems="10"
+        android:height="30dp"
+        android:padding="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="2dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editText2"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="30dp"
+         >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Car 1"
+          android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Car 2" 
+            android:textColor="@android:color/white"/>
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Car 3"
+            android:textColor="@android:color/white" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/TextViewHighScoreScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextViewHighScoreName"
+        android:layout_below="@+id/TextViewHighScoreName"
+        android:text="score"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:text="High Score:"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:height="40dp"
+        android:text="Start"
+        android:textColor="@android:color/black"
+        android:width="200dp" />
+
+    <TextView
+        android:id="@+id/TextViewHighScoreName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginTop="19dp"
+        android:text="name"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
